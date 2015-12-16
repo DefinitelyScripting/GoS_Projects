@@ -416,5 +416,5 @@ function GetDrawText(enemy)
 	end
 end
 
-PrintChat(string.format("<font color='#1244EA'>Deftsu's Katarina:</font> <font color='#FFFFFF'>DefinitelyScripting Edition. </font>")) 
-PrintChat("Same script, except mine works" ..GetObjectBaseName(myHero)) 
+PrintChat(string.format("<font color='#1244EA'>Deftsu's Katarina:</font> <font color='#FFFFFF'>with some funny stuff done to it by DefinitelyScripting... open sourced scripts are a wonderful thing. </font>")) 
+PrintChat("Same script, with a few tweaks for the ultimate handling. [Note: despite disabling attacks IOW insists on auto attacking on occasion. There is definitely a logic error somewhere in this code]") 
