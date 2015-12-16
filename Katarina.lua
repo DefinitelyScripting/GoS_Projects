@@ -4,7 +4,7 @@ require('Inspired')
 require('DeftLib')
 require('DamageLib')
 
-AutoUpdate("/D3ftsu/GoS/master/Katarina.lua","/D3ftsu/GoS/master/Katarina.version","Katarina.lua",13)
+AutoUpdate("/DefinitelyScripting/GoS_Projects/master/Katarina.lua","/DefinitelyScripting/GoS_Projects/master/katarina.version","Katarina.lua",13)
 
 local KatarinaMenu = MenuConfig("Katarina", "Katarina")
 KatarinaMenu:Menu("Combo", "Combo")
@@ -416,5 +416,5 @@ function GetDrawText(enemy)
 	end
 end
 
-PrintChat(string.format("<font color='#1244EA'>Katarina:</font> <font color='#FFFFFF'> By Deftsu Loaded, Have A Good Game ! </font>")) 
-PrintChat("Have Fun Using D3Carry Scripts: " ..GetObjectBaseName(myHero)) 
+PrintChat(string.format("<font color='#1244EA'>Deftsu's Katarina:</font> <font color='#FFFFFF'>DefinitelyScripting Edition , Have A Good Game ! </font>")) 
+PrintChat("Same script, except mine works" ..GetObjectBaseName(myHero)) 
