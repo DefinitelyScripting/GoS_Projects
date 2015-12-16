@@ -416,5 +416,5 @@ function GetDrawText(enemy)
 	end
 end
 
-PrintChat(string.format("<font color='#1244EA'>Deftsu's Katarina:</font> <font color='#FFFFFF'>DefinitelyScripting Edition , Have A Good Game ! </font>")) 
+PrintChat(string.format("<font color='#1244EA'>Deftsu's Katarina:</font> <font color='#FFFFFF'>DefinitelyScripting Edition. </font>")) 
 PrintChat("Same script, except mine works" ..GetObjectBaseName(myHero)) 
