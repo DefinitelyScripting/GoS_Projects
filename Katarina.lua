@@ -13,6 +13,7 @@ KatarinaMenu.Combo:Boolean("W", "Use W", true)
 KatarinaMenu.Combo:Boolean("E", "Use E", true)
 KatarinaMenu.Combo:Boolean("R", "Use R", true)
 KatarinaMenu.Combo:Key("WardJumpkey", "Ward Jump!", string.byte("G"))
+KatarinaMenu.Combo:KeyBinding("AntiCombo", "Combo without IOW", string.byte("S"))
 
 KatarinaMenu:Menu("Harass", "Harass")
 KatarinaMenu.Harass:Boolean("Q", "Use Q", true)
@@ -205,7 +206,7 @@ OnTick(function(myHero)
   local Qtarget = target1:GetTarget()
   local Etarget = target2:GetTarget()
 
-  if IOW:Mode() == "Combo" and not CastingR then
+if KatarinaMenu.Combo.AntiCombo:Value() and not CastingR then
 		  if IsReady(_Q) and KatarinaMenu.Combo.Q:Value() and ValidTarget(Qtarget, 675) and ValidTarget(Etarget, 700) and IOW.movementEnabled == true and IOW.attacksEnabled == true then
 		  CastTargetSpell(Qtarget, _Q)
 		  end
@@ -416,5 +417,5 @@ function GetDrawText(enemy)
 	end
 end
 
-PrintChat(string.format("<font color='#1244EA'>Deftsu's Katarina:</font> <font color='#FFFFFF'>with some funny stuff done to it by DefinitelyScripting... open sourced scripts are a wonderful thing. </font>")) 
-PrintChat("Same script, with a few tweaks for the ultimate handling. [Note: despite disabling attacks IOW insists on auto attacking on occasion. There is definitely a logic error somewhere in this code]") 
+PrintChat(string.format("<font color='#1244EA'>Deftsu's Katarina:</font> <font color='#FFFFFF'>with some funny stuff done to it by DefinitelyScripting... this is meant to be a quick-fix not a solution. </font>")) 
+PrintChat("Same script, with a few tweaks for the ultimate handling. [Note: To combo, just hold the 'S' key down while moving manually with your mouse.]") 
